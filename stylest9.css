@@ -1,0 +1,310 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  display: flex;
+    flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #e2dddd;
+  color: #333;
+}
+.main-content {
+  flex-grow: 1; /* This will push the footer down */
+}
+
+/* Header container */
+header {
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px;
+  position: relative; /* Required for hamburger menu */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu icon (only visible on small screens) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* Pushes the hamburger to the right */
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px;
+}
+
+/* Responsive Layout - Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-content {
+      padding: 0 10px;
+  }
+
+  /* Shrink logo size for mobile */
+  .logo {
+      width: 80px;
+  }
+
+  /* Hide the navigation links and show the hamburger menu */
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      color: #333;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+      display: flex;
+  }
+
+  /* When the hamburger is active, display the navigation */
+  .hamburger.active + nav ul {
+      display: flex;
+  }
+}
+
+/* Main content styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 100px;
+  background-color: rgb(47, 45, 81);
+}
+
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.footer {
+ 
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top:50px;
+  background-color: #2F2D51;
+  color: white;
+
+}
+.footer-logo img {
+  max-width: 150px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+}
+.footer-paragraph {
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+/* Responsive Layout for Main Content */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-content, .image-content {
+      padding: 10px 0;
+  }
+
+  .image-content {
+      justify-content: center;
+  }
+}
+
+.section-title {
+  background-color: #2F2D51;
+  color: white;
+  padding: 5px 10px;
+  width: 80%;
+  border-radius: 5px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* Remove default margin */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px; /* Fixed height */
+  line-height: 50px; /* Vertically center the text */
+  font-size: 20px;
+}
+
+
+
+m {
+    color: red; 
+    margin-top: 5px;
+    padding: 5px 5px; /* PDF icons are typically red */
+}
+
+
+.container2 {
+  width: 80%; /* Set a width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    
+    margin: 0 10px;
+  }
+  
+  /* Style the social media icons */
+  .social-icons a img {
+    margin-top: 15px;
+    width: 40px; /* Adjust the icon size as needed */
+    height: 40px;
+    border: none;
+  }
+
+
+
+.notescont {
+    background-color: #807f83;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Center the container */
+    padding: 5px 10px; /* Add padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Space between icon+name and download button */
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.notescont .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.notescont .m {
+    margin-right: 5px; /* Minimal space between PDF icon and name */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.notescont .n {
+    flex-grow: 1;
+    white-space: normal; /* Allow text wrapping */
+    word-wrap: break-word; /* Break long words */
+    line-height: 1.2;
+    max-width: 70%; /* Adjust width to restrict the text area */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.notescont o {
+    color: #2F2D51;
+    margin-left: 10px;
+    padding-left: 10px;
+    z-index: 1;
+    box-sizing: content-box;
+}
+
+
+  

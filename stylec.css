@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2dddd;
+}
+
+.containerc {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.left-containerc {
+    width: 50%;
+}
+
+.left-containerc p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.right-containerc {
+    width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px;
+    position: relative; /* Required for hamburger menu */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hamburger menu icon (only visible on small screens) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto; /* Pushes the hamburger to the right */
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+  }
+  
+  /* Responsive Layout - Mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .header-content {
+        padding: 0 10px;
+    }
+  
+    /* Shrink logo size for mobile */
+    .logo {
+        width: 80px;
+    }
+  
+    /* Hide the navigation links and show the hamburger menu */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    nav ul li a {
+        color: #333;
+    }
+  
+    /* Show the hamburger icon */
+    .hamburger {
+        display: flex;
+    }
+  
+    /* When the hamburger is active, display the navigation */
+    .hamburger.active + nav ul {
+        display: flex;
+    }
+  }
+  .footer {
+ 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2F2D51;
+    color: white;
+  
+  }
+  .footer-logo img {
+    max-width: 150px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+  }
+  .footer-paragraph {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    
+    margin: 0 10px;
+  }
+  
+  /* Style the social media icons */
+  .social-icons a img {
+    margin-top: 15px;
+    width: 40px; /* Adjust the icon size as needed */
+    height: 40px;
+    border: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: rgb(47, 45, 81);
+  }
+  
+  .text-content {
+    text-align: center;
+   
+    margin: 0 auto;
+    padding-right: 20px;
+  }
+  
+  .text-content h1 {
+    
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    color: #fff;
+    font-size: 1rem;
+   
+  }
+  
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }    
+
+
+  .login-container {
+    background-color: #e2dddd;
+    padding: 20%;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.k {
+  
+  margin: 0 auto;
+  padding: 1px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.k:hover {
+  background-color: #45a049;
+}
+
+.section-title {
+  background-color: #2F2D51;
+  color: white;
+  padding: 5px 5px;
+  width: 80%;
+  border-radius: 5px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* Remove default margin */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  height: 20px; /* Fixed height */
+  line-height: 25px; /* Vertically center the text */
+  font-size: 20px;
+}
+
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+/* Styling for the select (dropdown) */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for the select dropdown */
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
