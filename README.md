@@ -9,4 +9,4 @@ Branding: A logo (logo.png) is used in the header to establish the website's ide
 Potential Features (based on structure):
 Travel blogs or guides
 Navigation for different travel categories or destinations
-User interaction, possibly with reviews or user-submitted content
+User interaction, possibly with reviews or user-submitted content.
